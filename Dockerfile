@@ -17,3 +17,5 @@ RUN gpg --verify awscliv2.sig awscliv2.zip
 RUN unzip ./awscliv2.zip
 RUN ./aws/install
 RUN aws --version
+
+RUN go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.47.2
