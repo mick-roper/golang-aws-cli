@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        goVersion: ['1.21', '1.22.1']
+        goVersion: ['1.23.3']
     env:
       IMAGE_NAME: devanarchy/golang-aws-cli:go${{ matrix.goVersion }}
     steps:
